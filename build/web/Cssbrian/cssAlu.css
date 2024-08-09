@@ -1,0 +1,139 @@
+/* Estilos para el título */
+#main-content h1 {
+    font-size: 1.8em; /* Tamaño reducido */
+    text-align: center; /* Centrado */
+    color: black; /* Color negro */
+    text-shadow: 2px 2px #006400; /* Sombra verde oscuro */
+    background-color: #66CDAA; /* Fondo verde claro */
+    padding: 10px 20px; /* Espaciado interior reducido */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-bottom: 20px; /* Margen inferior */
+    margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos para la tabla */
+.table-alumnos {
+    width: 85%; /* Ancho reducido */
+    margin: 0 auto; /* Centrado horizontal */
+    font-size: 1.2em; /* Tamaño de fuente */
+    border-collapse: collapse; /* Colapso de bordes */
+    box-shadow: 0 8px 16px rgba(0, 100, 0, 0.1); /* Sombra suave */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.table-alumnos thead {
+    background-color: #006400; /* Color verde oscuro en la cabecera */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centrado */
+    font-weight: bold; /* Negrita */
+    border-bottom: 2px solid #66CDAA; /* Borde inferior verde claro */
+}
+
+.table-alumnos tbody tr:nth-child(even) {
+    background-color: #C0E4CC; /* Color verde claro en filas pares */
+}
+
+.table-alumnos tbody tr:nth-child(odd) {
+    background-color: #D9EDD8; /* Color verde claro en filas impares */
+}
+
+.table-alumnos th,
+.table-alumnos td {
+    padding: 12px; /* Espaciado interno */
+    text-align: center; /* Centrado */
+    border: 1px solid #66CDAA; /* Borde delgado verde claro */
+}
+
+/* Estilos para la barra de búsqueda */
+.input-group {
+    width: 70%; /* Ancho de la barra de búsqueda ampliado */
+    margin: 0 auto 20px auto; /* Centrado horizontal y margen inferior */
+    text-align: center; /* Centrado */
+}
+
+.input-busqueda-alumno {
+    width: calc(100% - 100px); /* Ancho completo */
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interior */
+    font-size: 1.2em; /* Tamaño de fuente */
+    box-shadow: 0 0 20px rgba(0, 100, 0, 0.2); /* Sombra suave */
+    border: 2px solid #66CDAA; /* Borde verde claro */
+    outline: none; /* Sin contorno */
+}
+
+/* Estilos para los botones */
+.btn {
+    background-color: #006400; /* Color verde oscuro */
+    border-color: #66CDAA; /* Contorno verde claro */
+    color: white; /* Texto blanco */
+    margin: 10px; /* Margen entre botones */
+    padding: 12px 24px; /* Espaciado interior reducido */
+    font-size: 0.95em; /* Tamaño de fuente reducido */
+    border-radius: 30px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.btn:hover {
+    color: white; /* Texto blanco al pasar el mouse */
+}
+
+.btn-activar-alumno,
+.btn-eliminar-alumno,
+.btn-ver-datos-alumno,
+.btn-buscar-alumno,
+.btn-recargar-pagina {
+    width: 180px; /* Ancho fijo de los botones */
+    text-align: center; /* Centrado del texto de los botones */
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin: 10px auto; /* Margen automático para centrar horizontalmente los botones */
+}
+
+.btn-activar-alumno {
+    background-color: #006400; /* Color verde oscuro */
+}
+
+.btn-activar-alumno:hover {
+    background-color: #90EE90; /* Color verde claro al pasar el mouse */
+}
+
+.btn-eliminar-alumno {
+    background-color: #006400; /* Color verde oscuro */
+}
+
+.btn-eliminar-alumno:hover {
+    background-color: #FF6347; /* Color rojo al pasar el mouse */
+}
+
+.btn-ver-datos-alumno,
+.btn-buscar-alumno {
+    background-color: #006400; /* Color verde oscuro */
+}
+
+.btn-ver-datos-alumno:hover,
+.btn-buscar-alumno:hover {
+    background-color: #00BFFF; /* Color azul claro al pasar el mouse */
+}
+
+.btn-recargar-pagina {
+    background-color: #006400; /* Color verde oscuro */
+    color: white; /* Texto blanco */
+}
+
+.btn-recargar-pagina:hover {
+    background-color: #FFFF99; /* Color amarillo claro al pasar el mouse */
+    color: black; /* Texto negro */
+}
+
+/* Estilos adicionales */
+.container {
+    padding-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para la fila seleccionada */
+.table-alumnos .fila-seleccionada {
+    background-color: #90EE90 !important; /* Verde menta */
+    color: black; /* Texto negro */
+}

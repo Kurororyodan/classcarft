@@ -1,0 +1,97 @@
+.custom-modal .modal-dialog {
+    max-width: 900px;
+}
+
+.custom-modal .modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.custom-modal .modal-header {
+    background-color: #28a745;
+    color: #fff;
+    border-bottom: none;
+    padding: 20px 30px;
+}
+
+.custom-modal .modal-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.custom-modal .close {
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.custom-modal .close:hover,
+.custom-modal .close:focus {
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+}
+
+.custom-modal .modal-body {
+    padding: 20px 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.custom-modal .modal-footer {
+    border-top: none;
+    padding: 10px 30px;
+}
+
+.custom-modal .modal-footer .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.custom-modal .btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.custom-modal .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.dia-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dia-container label {
+    width: 100px; /* Ajusta este valor según sea necesario */
+}
+
+.dia-container input[type="text"] {
+    width: 80px; /* Ajusta este valor para el tamaño de los cuadros de texto */
+    margin-left: 10px;
+}
+
+.dia-container input[type="time"] {
+    width: 80px; /* Ajusta este valor para el tamaño de los cuadros de texto */
+    margin-left: 10px;
+}
+
+.dia-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+   .scrollable-container {
+    max-height: 200px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.scrollable-container {
+    max-height: 300px; /* Ajusta esta altura según tus necesidades */
+    overflow-y: auto;
+}

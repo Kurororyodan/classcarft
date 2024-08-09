@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/modal.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <body>
+    <div id="page" class="site">
+        <div class="container">
+            <div class="form-box">
+                <div class="progress">
+                    <div class="logo"><a href="/"><span>Class</span>Craft</a></div>
+                    <ul class="progress-steps">
+                        <li class="step active">
+                            <span>1</span>
+                            <p>Personal<br><span>25 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>2</span>
+                            <p>Contact<br><span>25 secs to complete</span></p>
+                        </li>
+                        <li class="step">
+                            <span>3</span>
+                            <p>Security<br><span>25 secs to complete</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <form action="">
+                    <div class="form-one form-step active">
+                        <div class="bg-svg"></div>
+                        <h2>Personal Information</h2>
+                        <p>Enter your personal information</p>
+                        <div>
+                            <label>First name</label>
+                            <input type="text" placeholder="e.g. John">
+                        </div>
+                        <div class="birth">
+                            <label>Cumple</label>
+                            <div class="grouping">
+                                <input type="text" pattern="[0-9]*" name="day" value="" min="0" max="31">
+                                <input type="text" pattern="[0-9]*" name="month" value="" min="0" max="12">
+                                <input type="text" pattern="[0-9]*" name="year" value="" min="1900" max="2100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-two form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Contact</h2>
+                        <p>Enter your contact information</p>
+                        <div>
+                            <label>Phone</label>
+                            <input type="tel" placeholder="+477">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="email" placeholder="example@mail.com">
+                        </div>
+                    </div>
+                    <div class="form-three form-step">
+                        <div class="bg-svg"></div>
+                        <h2>Security</h2>
+                        <p>Set up your security details</p>
+                        <div>
+                            <label>Password</label>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <div>
+                            <label>Confirm Password</label>
+                            <input type="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn-prev" disabled>Back</button>
+                        <button type="button" class="btn-next">Next</button>
+                        <button type="button" class="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script src="js/modal.js" type="text/javascript"></script>
+    </body>
+</html>

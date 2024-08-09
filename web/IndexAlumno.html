@@ -1,0 +1,510 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link href="Cssbrian/inicioHamburguesa.css" rel="stylesheet" type="text/css"/>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="sweetalert2.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
+        <link href="Cssbrian/cssModalAlu.css" rel="stylesheet" type="text/css"/>
+        <link href="Cssbrian/botones.css" rel="stylesheet" type="text/css"/>
+        <link href="Cssbrian/modal.css" rel="stylesheet" type="text/css"/>
+        <link href="Cssbrian/cssAlu.css" rel="stylesheet" type="text/css"/>
+        <link href="Cssbrian/cssmodal.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Importar SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <!-- Importar tus scripts -->
+            <!-- SweetAlert CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+
+
+        <!-- SweetAlert JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    </head>
+    <body onload="mostrarNombreIndex()">
+    <nav>
+        <span id="open-close"><i class='bx bx-menu'></i></span>
+        <img src="img/logo.png" alt="" width="35" height="35" style="margin-bottom: 5px;">
+    </nav>
+    <br><br>
+    <div class="background"></div>
+    <aside id="aside">
+        <div class="container-svg" onclick="window.location.href='Inicio.html';">
+            <div>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;"><g class="style-scope yt-icon"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon"></path></g></svg>
+                <span>Inicio</span>
+            </div>
+
+        </div>
+       
+        
+        <div class="container-svg">
+            
+            <h2> Modulos</h2> 
+            <div onclick="window.location.href='IndexAlumno.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                    <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM8.715 8c1.151 0 2 .849 2 2s-.849 2-2 2-2-.849-2-2 .848-2 2-2zm3.715 8H5v-.465c0-1.373 1.676-2.785 3.715-2.785s3.715 1.412 3.715 2.785V16zM19 15h-4v-2h4v2zm0-4h-5V9h5v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Alumnos</span>
+            </div>
+            <div onclick="window.location.href='IndexProfesor.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                     <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
+                </g>
+                </svg>
+
+
+
+                <span>Profesores</span>
+            </div>
+            <div onclick="window.location.href='indexGrupo.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path>
+                <path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path>
+                </g>
+</svg>
+
+
+                <span>Grupos</span>
+            </div>
+            <div onclick="window.location.href='indexSalon.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M7 14.001h2v2H7z"></path>
+                <path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Aulas</span>
+            </div>
+            <div onclick="window.location.href='Materias.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M7 14.001h2v2H7z"></path>
+                <path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Materias</span>
+            </div>
+            <div onclick="window.location.href='Horarios.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <path d="M6.012 18H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19c0-.101.009-.191.024-.273.112-.576.584-.717.988-.727zM8.648 7.642a2.224 2.224 0 0 1 3.125 0l.224.219.223-.219a2.225 2.225 0 0 1 3.126 0 2.129 2.129 0 0 1 0 3.069L11.998 14l-3.349-3.289a2.128 2.128 0 0 1-.001-3.069z"></path>
+                </svg>
+
+                <span>Horarios</span>
+            </div>
+        </div>
+        
+        
+    </aside>
+            <div class="title-cards">
+            <h2>Alumnos</h2>
+        </div>
+        <div class="container-card">
+            <div class="card">
+                <figure>
+                    <img src="https://us.123rf.com/450wm/milkos/milkos2308/milkos230801758/210911052-grupo-de-amistad-universitaria-de-estudiantes-internacionales-felices-posando-juntos-al-aire-libre.jpg?ver=6" alt="Crear un nuevo horario">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Registrar un nuevo Alumno</h3>
+                    <p>Agrega los alumnos según tus necesidades.</p>
+                    <a href="#" id="openModal">Registrar</a>
+                </div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="https://www.ayudauniversitaria.com/wp-content/uploads/2021/11/examenes-ufv-23.jpg" alt="Mis Horarios">
+                </figure>
+                <div class="contenido-card">
+                    <h3>Alumnos</h3>
+                    <p>Consultar Alumnos ya Existentes</p>
+                    <a href="#" onclick="mostrarModal()">Mostrar</a>
+                </div>
+            </div>
+        </div>
+
+    <div id="mymodal2" class="modal modal2">
+        <div class="modal-content modal-content2">
+            <span class="close">&times;</span>
+
+            <section id="main-content">
+                <div class="container my-4">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                           <h1 data-text="Gestión de Alumno">Gestión de Alumno</h1>
+                        </div>
+                    </div>
+                    <br>
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <div class="input-group mb-3">
+                                <input type="text" id="input-busqueda" class="form-control input-busqueda-alumno" placeholder="Buscar Alumno">
+                                <button class="btn btn-primary btn-buscar-alumno" id="btn-buscar">Buscar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <div class="row">
+                        <div class="col-12">
+                            <table class="table table-striped table-alumnos">
+                                <thead>
+                                    <tr style="color: white;">
+                                        <th scope="col">IdAlumno</th>
+                                        <th scope="col">Matricula</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Apellido Paterno</th>
+                                        <th scope="col">Estatus</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody-alumnos">
+                                    <!-- Aquí se generan dinámicamente las filas de los alumnos -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <br>
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <br><!-- comment -->
+                    <div class="row mb-4">
+                        <div class="col-12 d-flex justify-content-center">
+                            <button class="btn btn-primary mx-2 btn-activar-alumno">Activar Alumno</button>
+                            <button class="btn btn-danger btn-eliminar-alumno">Desactivar Alumno</button>
+                            <button class="btn btn-secondary mx-2 btn-ver-datos-alumno" onclick="mostrarModal3()">Ver datos Alumno</button>
+                            <button class="btn btn-secondary mx-2 btn-recargar-pagina" onclick="location.reload()">Regresar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <!-- Insert the form HTML here -->
+                <div class="form-box">
+                    <div class="progress">
+                        <div class="logo"><a href="/"><span>CLASS</span>CRAFT</a></div>
+                        <ul class="progress-steps">
+                            <li class="step active">
+                                <span>1</span>
+                                <p>Informacion Personal<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+
+                              <li class="step">
+                                <span>1</span>
+                                <p>Información  Personal<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+                               <li class="step">
+                                <span>1</span>
+                                <p>Información  Personal<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+                          <li class="step">
+                                <span>1</span>
+                                <p>Información  Personal<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+                            <li class="step">
+                                <span>2</span>
+                                <p>Información de contacto<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+                                <li class="step">
+                                <span>3</span>
+                                <p>Información academica<br><span>Completa los datos correctamente!</span></p>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="form-one form-step active">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información Personal</h2>
+                            <p>Ingresa la información personal del Alumno</p>
+                            <div>
+                                <label for="txtNombre">Nombre(s):*</label>
+                                <input type="text" id="txtNombre" placeholder="Ejemplo: Juan">
+                            </div>
+                              <div>
+                                <label for="txtApellidoPaterno">Apellido Paterno:*</label>
+                                <input type="text"  id="txtApellidoPaterno" placeholder="Ejemplo: Perez">
+                            </div>
+                              <div>
+                                <label for="txtApellidoMaterno">Apellido Materno:*</label>
+                                <input type="text" id="txtApellidoMaterno" placeholder="Ejemplo: Ortega">
+                            </div>
+                             </div>
+
+                      <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información Personal</h2>
+                            <p>Ingresa la información personal del Alumno</p>
+                              <div>
+                                <label for="txtGenero">Genero*</label>
+                                <input type="text" id="txtGenero" placeholder="Ejemplo: H , M, O">
+                                 </div>
+                                <div>
+                                <label for="txtFechaNacimiento">Fecha Nacimiento*</label>
+                                <input type="text" id="txtFechaNacimiento" placeholder="Ejemplo: 2024/02/20">
+                                 </div>
+                               </div>
+
+
+                              <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información Personal</h2>
+                            <p>Ingresa la información personal del Alumno</p>
+                                <div>
+                                <label  for="RFC">RFC:*</label>
+                                <input type="text" id="RFC" placeholder="Ejemplo: N/A">
+                            </div>
+                                <div>
+                                <label for="CURP">CURP:*</label>
+                                <input type="text" id="CURP" placeholder="Ejemplo: N/A">
+                            </div>
+                              </div>
+
+                           <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información Personal</h2>
+                            <p>Ingresa la información personal del Alumno</p>
+                                <div>
+                                <label for="txtDomicilio">Domicilio:*</label>
+                                <input type="text" id="txtDomicilio" placeholder="Ejemplo: San Rincon Bolibiano #190-A">
+                            </div>
+                                 <div>
+                                <label for="txtCodigoPostal">Codigo Postal:*</label>
+                                <input type="text" id="txtCodigoPostal"  placeholder="Ejemplo: 37689">
+                            </div>
+                                 <div>
+                                <label for="txtCiudad">Ciudad:*</label>
+                                <input type="text"  id="txtCiudad" placeholder="Ejemplo: León">
+                            </div>
+                                 <div>
+                                <label for="txtEstado">Estado:*</label>
+                                <input type="text" id="txtEstado"  placeholder="Ejemplo: México">
+                            </div>
+                        </div>
+
+                        <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información de Contacto</h2>
+                            <p>Ingresa la información de contacto del Alumno</p>
+                            <div>
+                                <label for="txtTelefono">Telefono:</label>
+                                <input type="text" id="txtTelefono" placeholder="Ejemplo: 477">
+                            </div>
+                            <div>
+                                <label for="txtEmail">Correo Electronico:</label>
+                                <input type="text" id="txtEmail" placeholder="Ejemplo: example@gmail.com">
+                            </div>
+                        </div>
+                         <div class="form-two form-step">
+                            <div class="bg-svg"></div>
+                            <h2 style="color: black;">Información Academica</h2>
+                            <p>Ingresa la información academica del Alumno</p>
+                                 <div>
+                                <label for="txtMatricula">Matricula:*</label>
+                                <input type="text" id="txtMatricula" placeholder="Ejemplo: 220023512388">
+                            </div>
+                            <div>
+                                <label for="txtEstatus">Estatus:*</label>
+                                <input type="number" id="txtEstatus" placeholder="Ejemplo: Activo 1 , Inactivo 0">
+                            </div>
+                            <div>
+                                <label for="txtModalidad">Modalidad:*</label>
+                                <input type="text" id="txtModalidad" placeholder="Ejemplo: Presurisada">
+                            </div>
+                               <div>
+                                <label for="txtFechaIngreso">Fecha Ingreso*</label>
+                                <input type="text" id="txtFechaIngreso" placeholder="Ejemplo: 2024/02/20">
+                                 </div>
+                        </div>
+
+                       
+
+
+                        <div class="btn-group">
+                            <button type="button" class="btn-prev" disabled>Regresar</button>
+                            <button type="button" class="btn-next">Siguiente</button>
+                          <button type="button" class="btn-submit" onclick="insertarAlumno()">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="mymodal3" class="modal modal2">
+    <div class="modal-content modal-content2">
+        <span class="close">&times;</span>
+
+        <section id="main-content">
+            <div class="container my-4">
+                <div class="row">
+                    <div class="custom-col text-center">
+                        <h1 data-text="Datos del Alumno">Datos del Alumno</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <form id="alumnoForm" class="text-center">
+                            <div class="form-group">
+                                <label for="txtNombre">Nombre:</label>
+                                <input type="text" class="form-control" id="txtNombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtApellidoPaterno">Apellido Paterno:</label>
+                                <input type="text" class="form-control" id="txtApellidoPaterno">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtApellidoMaterno">Apellido Materno:</label>
+                                <input type="text" class="form-control" id="txtApellidoMaterno">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtGenero">Género:</label>
+                                <input type="text" class="form-control" id="txtGenero">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtFechaNacimiento">Fecha de Nacimiento:</label>
+                                <input type="text" class="form-control" id="txtFechaNacimiento">
+                            </div>
+                            <div class="form-group">
+                                <label for="RFC">RFC:</label>
+                                <input type="text" class="form-control" id="RFC">
+                            </div>
+                            <div class="form-group">
+                                <label for="CURP">CURP:</label>
+                                <input type="text" class="form-control" id="CURP">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtDomicilio">Domicilio:</label>
+                                <input type="text" class="form-control" id="txtDomicilio">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCodigoPostal">Código Postal:</label>
+                                <input type="text" class="form-control" id="txtCodigoPostal">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtCiudad">Ciudad:</label>
+                                <input type="text" class="form-control" id="txtCiudad">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEstado">Estado:</label>
+                                <input type="text" class="form-control" id="txtEstado">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtTelefono">Teléfono:</label>
+                                <input type="text" class="form-control" id="txtTelefono">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEmail">Email:</label>
+                                <input type="email" class="form-control" id="txtEmail">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtMatricula">Matrícula:</label>
+                                <input type="text" class="form-control" id="txtMatricula">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtEstatus">Estatus:</label>
+                                <input type="number" class="form-control" id="txtEstatus">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtModalidad">Modalidad:</label>
+                                <input type="text" class="form-control" id="txtModalidad">
+                            </div>
+                            <div class="form-group">
+                                <label for="txtFechaIngreso">Fecha de Ingreso:</label>
+                                <input type="text" class="form-control" id="txtFechaIngreso">
+                            </div>
+                            
+                            <div class="form-group text-center">
+<button type="button" class="btn btn-primary mx-2" onclick="actualizarAlumno()">Actualizar alumno</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+        <script src="jsBryan/ControllerHamburguesa.js" type="text/javascript"></script>
+        <script src="jsBryan/modal.js" type="text/javascript"></script>
+       <script>
+        // Función para abrir el primer modal
+    function mostrarModal() {
+        var modal = document.getElementById('mymodal2');
+        modal.style.display = 'block';
+    }
+
+        // Función para cerrar el primer modal
+        function cerrarModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = 'none';
+        }
+
+        // Función para abrir el segundo modal
+    // Función para abrir el segundo modal
+    function mostrarModal2() {
+        var modal = document.getElementById('mymodal2');
+        modal.style.display = 'block';
+    }
+
+    // Función para cerrar el segundo modal
+    function cerrarModal2() {
+        var modal = document.getElementById('mymodal2');
+        modal.style.display = 'none';
+    }
+
+
+
+    function mostrarModal3() {
+        var modal = document.getElementById('mymodal3');
+        modal.style.display = 'block';
+    }
+
+    // Función para cerrar el segundo modal
+    function cerrarModal3() {
+        var modal = document.getElementById('mymodal3');
+        modal.style.display = 'none';
+    }
+
+        // Event liste
+        // ners para cerrar los modales al hacer clic en la "x"
+        var closeButtons = document.getElementsByClassName('close');
+        for (var i = 0; i < closeButtons.length; i++) {
+            closeButtons[i].addEventListener('click', function() {
+                var modalId = this.closest('.modal').id;
+                var modal = document.getElementById(modalId);
+                modal.style.display = 'none';
+            });
+        }
+    </script>
+    <script src="jsBryan/ControllerAlumno.js" type="text/javascript"></script>
+    </body>
+    </html>
+
+

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link href="css/inicioHamburguesa.css" rel="stylesheet" type="text/css"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">    
+        <!-- SweetAlert CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+    <link href="css/botones.css" rel="stylesheet" type="text/css"/>
+    <link href="css/modal.css" rel="stylesheet" type="text/css"/>
+    <!-- SweetAlert JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
+</head>
+<body onload="verificarToken()">
+    
+    <nav>
+        <span id="open-close"><i class='bx bx-menu'></i></span>
+        <img src="img/logo.png" alt="" width="35" height="35" style="margin-bottom: 5px;">
+
+        
+
+    </nav>
+    <br>
+        <br>
+    
+    
+
+    
+    
+    <div class="background"> </div>
+    
+    
+    <aside id="aside">
+        <div class="container-svg" onclick="window.location.href='Inicio.html';">
+            <div>
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;"><g class="style-scope yt-icon"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8" class="style-scope yt-icon"></path></g></svg>
+                <span>Inicio</span>
+            </div>
+
+        </div>
+       
+        
+        <div class="container-svg">
+            
+            <h2> Modulos</h2> 
+            <div onclick="window.location.href='IndexAlumno.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                    <path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zM8.715 8c1.151 0 2 .849 2 2s-.849 2-2 2-2-.849-2-2 .848-2 2-2zm3.715 8H5v-.465c0-1.373 1.676-2.785 3.715-2.785s3.715 1.412 3.715 2.785V16zM19 15h-4v-2h4v2zm0-4h-5V9h5v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Alumnos</span>
+            </div>
+            <div onclick="window.location.href='IndexProfesor.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                     <path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2 7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"></path>
+                </g>
+                </svg>
+
+
+
+                <span>Profesores</span>
+            </div>
+            <div onclick="window.location.href='indexGrupo.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M9.5 12c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm1.5 1H8c-3.309 0-6 2.691-6 6v1h15v-1c0-3.309-2.691-6-6-6z"></path>
+                <path d="M16.604 11.048a5.67 5.67 0 0 0 .751-3.44c-.179-1.784-1.175-3.361-2.803-4.44l-1.105 1.666c1.119.742 1.8 1.799 1.918 2.974a3.693 3.693 0 0 1-1.072 2.986l-1.192 1.192 1.618.475C18.951 13.701 19 17.957 19 18h2c0-1.789-.956-5.285-4.396-6.952z"></path>
+                </g>
+</svg>
+
+
+                <span>Grupos</span>
+            </div>
+            <div onclick="window.location.href='indexSalon.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M7 14.001h2v2H7z"></path>
+                <path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Aulas</span>
+            </div>
+            <div onclick="window.location.href='Materias.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <g>
+                <path d="M7 14.001h2v2H7z"></path>
+                <path d="M19 2h-8a2 2 0 0 0-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a2 2 0 0 0-2-2zM5 20v-8h6v8H5zm9-12h-2V6h2v2zm4 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V6h2v2z"></path>
+                </g>
+                </svg>
+
+
+                <span>Materias</span>
+            </div>
+            <div onclick="window.location.href='Horarios.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <path d="M6.012 18H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19c0-.101.009-.191.024-.273.112-.576.584-.717.988-.727zM8.648 7.642a2.224 2.224 0 0 1 3.125 0l.224.219.223-.219a2.225 2.225 0 0 1 3.126 0 2.129 2.129 0 0 1 0 3.069L11.998 14l-3.349-3.289a2.128 2.128 0 0 1-.001-3.069z"></path>
+                </svg>
+
+                <span>Horarios</span>
+            </div>
+            <div onclick="window.location.href='HoarioManual.html';">
+                <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="#909090" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 25px; height: 25px;">
+                <path d="M6.012 18H21V4c0-1.103-.897-2-2-2H6c-1.206 0-3 .799-3 3v14c0 2.201 1.794 3 3 3h15v-2H6.012C5.55 19.988 5 19.806 5 19c0-.101.009-.191.024-.273.112-.576.584-.717.988-.727zM8.648 7.642a2.224 2.224 0 0 1 3.125 0l.224.219.223-.219a2.225 2.225 0 0 1 3.126 0 2.129 2.129 0 0 1 0 3.069L11.998 14l-3.349-3.289a2.128 2.128 0 0 1-.001-3.069z"></path>
+                </svg>
+
+                <span>Horario Manual</span>
+            </div>
+        </div>
+        
+        
+    </aside>
+    <br>
+        <br>
+<br>
+      <div class="container-card">
+        <div class="card">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRZ9DMNFHxwZcfPXJrJeBMITxPMP3FMZk_ixXzTfzt4G_C-G058" alt="Crear un nuevo horario">
+            </figure>
+            <div class="contenido-card">
+                <h3>Crear horario por Grupo</h3>
+                <p>Aqui puedes crear un nuevo horario en base a un grupo.</p>
+                <a href="#" id="openCreateModal">Crear</a>
+            </div>
+        </div>
+          
+          
+          
+        <div class="card">
+            <figure>
+                <img src="img/lista.jpg" alt="Mis Horarios">
+            </figure>
+            <div class="contenido-card">
+                <h3>Mis Horarios</h3>
+                <p>Aqui puedes volver a descargar horarios previamente realizados.</p>
+                <a href="#" id="openShowModal">Mostrar</a>
+            </div>
+        </div>
+          
+    </div>
+
+    <!-- Modal for creating schedule by professor -->
+    <div id="createModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeCreateModal">&times;</span>
+        <div class="form-box">
+            <div class="progress">
+                <div class="logo"><a><span>CLASS</span>CRAFT</a></div>
+                <ul class="progress-steps">
+                    <li class="step active">
+                        <span>1</span>
+                        <p>Inicio<br><span>Organice su dia</span></p>
+                    </li>
+                    <li class="step">
+                        <span>2</span>
+                        <p>Grupo<br><span>Organice su dia</span></p>
+                    </li>
+                </ul>
+            </div>
+            <form action="">
+                <div class="form-one form-step active">
+                    <div class="bg-svg"></div>
+                    <h2>Inicio</h2>
+                    <p>Inicio</p>
+                    <div>
+                        <label>Seleccione un horario previo</label>
+                        <select id="horarioSelect">
+                            <option value="">Seleccione un horario previo</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>O ingrese un nuevo horario</label>
+                        <input type="text" id="horarioInput" placeholder="Ingrese un nuevo horario">
+                    </div>
+                </div>
+                <div class="form-two form-step">
+                    <div class="bg-svg"></div>
+                    <h2>Grupo</h2>
+                    <p>Seleccione un grupo</p>
+                    <div>
+                        <label>Seleccione un grupo</label>
+                        <select id="grupoSelect">
+                            <option value="">Seleccione un grupo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn-prev" disabled>Atrás</button>
+                    <button type="button" class="btn-next">Siguiente</button>
+                    <button type="button" class="btn-submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for showing existing schedules or schedules by professor -->
+<div id="showModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeShowModal">&times;</span>
+        <div class="form-box">
+            <h2>Seleccionar Horario</h2>
+            <div>
+                <input type="radio" id="optionExisting" name="scheduleOption" value="existing" checked>
+                <label for="optionExisting">Horarios Previos</label>
+                <input type="radio" id="optionProfessor" name="scheduleOption" value="professor">
+                <label for="optionProfessor">Horario por Profesor</label>
+            </div>
+            <div id="existingScheduleSection">
+                <p>Seleccione un horario para ver detalles:</p>
+                <select id="existingSchedules">
+                    <option value="">Seleccione un horario</option>
+                </select>
+            </div>
+            <div id="professorScheduleSection" style="display: none;">
+                <p>Seleccione un profesor:</p>
+                <select id="professorList">
+                    <option value="">Seleccione un profesor</option>
+                </select>
+                <p>Seleccione un identificador de horario:</p>
+                <select id="professorScheduleList" disabled>
+                    <option value="">Seleccione un identificador</option>
+                </select>
+            </div>
+            <button id="downloadSchedule">Descargar</button>
+        </div>
+    </div>
+</div>
+
+
+        <script src="js/ControllerHorarios.js" type="text/javascript"></script>
+        <script src="js/ControllerHamburguesa.js" type="text/javascript"></script>
+        <script src="js/modal.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap');
+
+:root {
+    --main-color: #6c5ce7;
+    --secondary-color: #a29bfe;
+    --lighter-color: #e0e0e7;
+    --light-color: #b0b0c0;
+    --dark-color: #52505e;
+    --font-smaller: 14px;
+    --font-bigger: 20px;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    border: 8px solid var(--lighter-color);
+    border-radius: 15px;
+    background-color: #faf9ff;
+}
+
+.form-box .progress {
+    position: relative;
+    padding: 1em;
+}
+
+.logo {
+    font-size: 1.75em;
+    font-weight: 800;
+    color: var(--dark-color);
+    padding: 40px 48px;
+    text-align: center;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.form-box .progress ul.progress-steps {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.form-box .progress ul.progress-steps li {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+}
+
+.form-box .progress ul.progress-steps li > span {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: var(--font-smaller);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1em;
+    border-radius: 50%;
+    background-color: var(--lighter-color);
+    z-index: 1;
+}
+
+.form-box .progress ul.progress-steps li.active > span {
+    color: white;
+    background-color: var(--main-color);
+    border: 4px solid var(--secondary-color);
+    z-index: 1;
+}
+
+.form-box .progress ul.progress-steps li p span {
+    font-size: var(--font-smaller);
+    color: var(--light-color);
+    display: none;
+}
+
+.form-box .progress ul li p {
+    position: absolute;
+    top: -2em;
+    font-size: 12px;
+}
+
+.form-box form {
+    width: 100%;
+    padding: 3em 1em;
+    background-color: white;
+    border-radius: 30px 30px 15px 15px;
+}
+
+.form-box form > div {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-box form > div p {
+    color: var(--light-color);
+    margin-bottom: 2em;
+}
+
+.form-box form > div > div:not(.checkbox) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.form-box form :where(input, select) {
+    height: 40px;
+    padding: 0 1em;
+    border-radius: 7px;
+    outline-color: var(--secondary-color);
+    border: 1px solid var(--lighter-color);
+    background-color: transparent;
+}
+
+.form-box form label {
+    font-size: var(--font-smaller);
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.form-box form .grouping {
+    display: flex;
+}
+
+.form-box form .grouping input {
+    max-width: 70px;
+    text-align: center;
+    margin-right: 1em;
+}
+
+.form-box form .checkbox input {
+    height: auto;
+}
+
+.form-box form > div:not(.btn-group) {
+    display: none;
+    -webkit-animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fadeIn .6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(10%);
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.form-box form > div.active {
+    display: block;
+}
+
+.form-box form > div .bg-svg {
+    width: 60px;
+    height: 50px;
+}
+
+.form-box .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.form-box .btn-group [class*="btn-"] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 1em 2.5em;
+    border: 4px solid var(--secondary-color);
+    border-radius: 30px;
+    cursor: pointer;
+    -webkit-transition: background-color .3s, border-color .3s ease-out;
+    transition: background-color .3s, border-color .3s ease-out;
+}
+
+.form-box .btn-group [class*="btn-"]:disabled {
+    background-color: var(--light-color);
+    border-color: var(--lighter-color);
+    cursor: text;
+}
+
+.form-box .btn-group [class*="btn-"]:hover:not(:disabled) {
+    background-color: var(--dark-color);
+    border-color: var(--light-color);
+}
+
+.form-box .btn-group .btn-submit,
+.form-box .form-two.active ~ .btn-group .btn-next {
+    display: none;
+}
+
+.form-box .form-two.active ~ .btn-group .btn-submit {
+    display: block;
+}
+
+.form-box .form-two.active ~ .btn-group {
+    justify-content: space-between;
+}
+
+::placeholder {
+    color: var(--light-color);
+}
+
+@media screen and (min-width: 768px) {
+    .form-box {
+        flex-direction: row;
+    }
+
+    .form-box .progress {
+        flex: 1 0 35%;
+        min-width: 300px;
+        padding: 3em;
+    }
+
+    .logo {
+        margin: -48px -48px 48px;
+    }
+
+    .form-box .progress ul.progress-steps {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-box .progress ul.progress-steps li:not(:last-child)::before {
+        content: '';
+        position: absolute;
+        left: 20px;
+        top: 30px;
+        width: 2px;
+        height: 65px;
+        background-color: var(--lighter-color);
+    }
+
+    .form-box form {
+        padding: 3em;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .form-box .progress ul li p {
+        position: relative;
+        top: auto;
+        font-size: inherit;
+    }
+
+    .form-box .progress ul.progress-steps li p span {
+        display: block;
+    }
+}
+
+/* Additional CSS for new modal */
+#showModal .modal-content {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#showModal .form-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+#showModal .form-box h2 {
+    margin-bottom: 1em;
+}
+
+#showModal .form-box p {
+    margin-bottom: 1em;
+}
+
+#showModal .form-box select {
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+#showModal .form-box input[type="text"] {
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+#showModal .form-box button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#showModal .form-box button:hover {
+    background-color: var(--dark-color);
+}
+
+#showModal .form-box div {
+    margin-bottom: 1em;
+}
